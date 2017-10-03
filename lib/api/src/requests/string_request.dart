@@ -1,0 +1,3 @@
+class StringRequest {
+  String data;
+}
