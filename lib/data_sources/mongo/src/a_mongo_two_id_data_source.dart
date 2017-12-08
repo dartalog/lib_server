@@ -8,8 +8,9 @@ export 'a_mongo_object_data_source.dart';
 import '../constants.dart';
 import 'package:server/data_sources/interfaces.dart';
 import 'package:server/server.dart';
+import '../../data_sources.dart';
 
-abstract class AMongoTwoIdDataSource<T extends AIdData>
+abstract class AMongoTwoIdDataSource<T extends IIdData>
     extends AMongoObjectDataSource<T> implements ATwoIdBasedDataSource<T> {
   AMongoTwoIdDataSource(MongoDbConnectionPool pool) : super(pool);
 

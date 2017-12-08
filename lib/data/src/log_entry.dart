@@ -1,6 +1,8 @@
 import 'package:logging/logging.dart';
+import 'package:server/data_sources/data_sources.dart';
 
 class LogEntry {
+  @DbIndex("LogTimestampIndex", ascending: false)
   DateTime timestamp;
   String message;
   String level;

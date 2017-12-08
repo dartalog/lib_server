@@ -37,12 +37,7 @@ abstract class AMongoDataSource {
     });
   }
 
-  @protected
-  MongoCollection get collection;
-
-  Future<DbCollection> getDbCollection(MongoDatabase con) async {
-    return await collection.getDbCollection(con);
-  }
+  Future<DbCollection> getDbCollection(MongoDatabase con);
 
   @protected
   Future<Map> genericUpdate(dynamic selector, dynamic document,

@@ -2,7 +2,7 @@ import 'paginated_data.dart';
 import 'id_list.dart';
 import 'a_id_data.dart';
 
-class PaginatedIdData<T extends AIdData> extends PaginatedData<T> {
+class PaginatedIdData<T extends IIdData> extends PaginatedData<T> {
   IdDataList<T> _data = new IdDataList<T>();
 
   @override

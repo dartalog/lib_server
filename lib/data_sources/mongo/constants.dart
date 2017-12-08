@@ -15,6 +15,4 @@ const String $all = r"$all";
 const String $in = r"$in";
 const String $each = r"$each";
 
-const String idField = "id";
-const String nameField = "name";
 const String internalIdField = "_id";

@@ -2,7 +2,7 @@ import 'package:option/option.dart';
 import 'a_id_data.dart';
 import 'dart:collection';
 
-class IdDataList<T extends AIdData> extends ListBase<T> {
+class IdDataList<T extends IIdData> extends ListBase<T> {
   final List<T> l = <T>[];
   IdDataList();
   IdDataList.copy(Iterable<T> source) {

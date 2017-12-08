@@ -5,7 +5,7 @@ import 'package:option/option.dart';
 import 'package:server/data_sources/src/interfaces/a_data_source.dart';
 import 'package:server/server.dart';
 
-abstract class ATwoIdBasedDataSource<T extends AIdData> implements ADataSource {
+abstract class ATwoIdBasedDataSource<T extends IIdData> implements ADataSource {
   static final Logger _log = new Logger('ATwoIdBasedDataSource');
 
   Future<IdDataList<T>> getAll();
